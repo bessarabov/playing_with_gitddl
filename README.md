@@ -21,12 +21,15 @@ Just a simple repo with several experiments with Perl library
 ## working
 
 start:
+
     docker-compose up -d
 
 work:
+
     docker exec -it playingwithgitddl_app_1
     mysql --host db -psecret
-    carton exec ./a.pl
+    carton exec bin/diff.pl
 
 stop:
+
     docker-compose stop; docker-compose rm -f
