@@ -1,0 +1,12 @@
+app:
+  build: .
+  links:
+   - db
+  volumes:
+    - .:/app/
+db:
+  image: mysql:5.6
+  environment:
+   MYSQL_ROOT_PASSWORD : secret
+  ports:
+   - "3306:3306"
