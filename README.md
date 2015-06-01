@@ -20,7 +20,7 @@ start:
     docker-compose up -d
 
 work:
-    docker exec -it playwithgitddl_app_1 bash
+    docker exec -it playingwithgitddl_app_1
     mysql --host db -psecret
     carton exec ./a.pl
 
