@@ -7,7 +7,10 @@ RUN apt-get update
 RUN apt-get install -y \
     curl \
     gcc \
-    make
+    git \
+    make \
+    mysql-client-5.6 \
+    perl-doc
 
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
 RUN cpanm lib::abs@0.93
@@ -19,9 +22,5 @@ ADD cpanfile.snapshot /app/
 WORKDIR /app
 
 RUN carton install --deployment
-
-RUN apt-get install -y mysql-client-5.6
-RUN apt-get install -y perl-doc
-RUN apt-get install -y git
 
 CMD sleep 1000000
