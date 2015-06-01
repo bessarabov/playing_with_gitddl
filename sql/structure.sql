@@ -1,4 +1,5 @@
 create table users (
     id int,
-    login varchar(255)
+    name varchar(255),
+    login varchar(100),
 );
