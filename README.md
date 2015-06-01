@@ -1,4 +1,8 @@
+# playing_with_gitddl
 
+Just a simple repo with several experiments with Perl library
+[GitDDL](https://metacpan.org/pod/GitDDL) and its extended version
+[GitDDL::Migrator](https://metacpan.org/pod/GitDDL::Migrator).
 
 ## build
 
